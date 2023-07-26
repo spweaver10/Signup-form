@@ -1,0 +1,200 @@
+.hero-image {
+    background-image: url(images/pexels-junior-teixeira-2047905.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    width: 40vw;
+    height: 100%;
+    border-right: 1px solid rgb(255, 88, 88);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+div {
+    display: block;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.content, .logo-bar {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.logo-bar img {
+    max-height: 100%;
+}
+
+.logo {
+    height: 10vh;
+}
+
+.logo-bar {
+    height: auto;
+    background-color: rgba(185, 185, 185, 0.05);
+    position: relative;
+    top: 20vh;
+    gap: 1vw;
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+    overflow: none;
+}
+
+img { 
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: calc(100% - 60%) auto;
+    overflow: hidden;
+}
+
+.dummy-text-container {
+    width: 60vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.left {
+    padding-left: 3vw;
+}
+
+.dummy-text {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-flow: column nowrap;
+    background: black;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 40px;
+}
+
+.dummy-text p {
+    color: lavender;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50vw;
+    padding: 40px;
+    gap: 25px;
+    background-color: black;
+    color: lavender;
+}
+
+.form-title {
+    grid-column: 1 / -1;
+    letter-spacing: 0.2em;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+form {
+    width: auto;
+    display: grid;
+    place-items: center;
+}
+
+.input {
+    display: grid;
+    row-gap: 5px;
+}
+
+.input #first-name:focus{
+    outline: 1px solid rgb(255, 88, 88);
+    box-shadow: 1px 1px 3px 4px rgb(255, 88, 88);
+}
+
+.input #last-name:focus{
+    outline: 1px solid rgb(255, 88, 88);
+    box-shadow: 1px 1px 3px 4px rgb(255, 88, 88);
+}
+
+.input #email-address:focus{
+    outline: 1px solid rgb(255, 88, 88);
+    box-shadow: 1px 1px 3px 4px rgb(255, 88, 88);
+}
+
+.input #phone-number:focus{
+    outline: 1px solid rgb(255, 88, 88);
+    box-shadow: 1px 1px 3px 4px rgb(255, 88, 88);
+}
+
+.input #password:focus{
+    outline: 1px solid rgb(255, 88, 88);
+    box-shadow: 1px 1px 3px 4px rgb(255, 88, 88);
+}
+
+.input #confirm-password:focus{
+    outline: 1px solid rgb(255, 88, 88);
+    box-shadow: 1px 1px 3px 4px rgb(255, 88, 88);
+}
+
+.log-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: lavender;
+    padding-bottom: 5px;
+}
+
+.submit-btn {
+    border: 2px solid rgb(255, 88, 88);
+    border-radius: 5px;
+    padding: 10px 40px;
+    background: transparent;
+    color: rgb(255, 88, 88);
+    font-size: 20px;
+}
+
+.btn-form {
+    padding-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: rgb(255, 88, 88);
+    color: lavender;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
